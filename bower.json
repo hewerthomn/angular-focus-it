@@ -1,0 +1,14 @@
+{
+  "name": "angular-focus-it",
+  "version": "1.0.0",
+  "authors": [
+    "Everton Inocencio <hewerthomn@gmail.com>"
+  ],
+  "description": "AngularJS module to focus an html input element",
+  "main": "angular-focus-it.js",
+  "keywords": [
+    "angular", "focus", "focusit", "focus-it"
+  ],
+  "license": "MIT",
+  "homepage": "http://github.com/hewerthomn/angular-focus-it"
+}
