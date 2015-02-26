@@ -14,7 +14,7 @@ bower install angular-focus-it
 
 Include the `angular-focus-it.min.js` file.
 
-```
+```html
 <script src="angular-focus-it.min.js"></script>
 ```
 
@@ -23,7 +23,7 @@ Include the `angular-focus-it.min.js` file.
 
 Add the `focusIt` module in your app dependencies.
 
-```
+```javascript
 angular.module('app', [
 	
 	'focusIt'
@@ -35,7 +35,7 @@ angular.module('app', [
 
 To use in your controller, add `focus` in your controller dependencies.
 
-```
+```javascript
 .controller('HomeCtrl', ['$scope', 'focus', function($scope, focus) {
 	focus('name');
 }]);
@@ -45,10 +45,10 @@ To use in your controller, add `focus` in your controller dependencies.
 Using in the directives:
 
 
-The `focus-id` attribute to set the id of the target element to focus.
-The `focus-on` attribute to set the event name to trigger the focus.
+* The `focus-id` attribute to set the id of the target element to focus.
+* The `focus-on` attribute to set the event name to trigger the focus.
 
-```
+```html
 <button type="button" focus-id="age" focus-on="click">Focus age</button>
 ```
 
