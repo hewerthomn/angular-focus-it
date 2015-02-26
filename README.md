@@ -15,7 +15,7 @@ bower install angular-focus-it
 Include the `angular-focus-it.min.js` file.
 
 ```html
-<script src="angular-focus-it.min.js"></script>
+<script src="bower_components/angular-focus-it/angular-focus-it.min.js"></script>
 ```
 
 
