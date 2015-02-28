@@ -10,5 +10,13 @@
     "angular", "focus", "focusit", "focus-it"
   ],
   "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
   "homepage": "http://github.com/hewerthomn/angular-focus-it"
 }
