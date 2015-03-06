@@ -11,15 +11,11 @@ angular.module('focusIt', [])
 	.directive('focusOn', ['focus', function(focus) {
 		return function($scope, $elem, $attrs)
 		{
-			console.log('focus id', $attrs.focusId);
-			console.log('focus on', $attrs.focusOn);
-
 			$elem.on($attrs.focusOn, function() {
 				focus($attrs.focusId);
 			});
-
 			$scope.$on('$destroy', function() {
 				$elem.off($attrs.focusOn);
 			});
 		};
-	}]);	
+	}]);
