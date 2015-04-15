@@ -53,6 +53,7 @@ Using in the directives:
 
 ```html
 <button type="button" focus-id="age" focus-on="click">Focus age</button>
+<button type="button" focus-id="search" focus-on="click" focus-timeout="400">Focus Search</button>
 ```
 
 

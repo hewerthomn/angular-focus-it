@@ -10,7 +10,7 @@ angular.module('focusIt', [])
 	.directive('focusOn', ['focus', function(focus) {
 		return function($scope, $elem, $attrs) {
 			$elem.on($attrs.focusOn, function() {
-				focus($attrs.focusId);
+				focus($attrs.focusId, $attrs.focusTimeout);
 			});
 
 			$scope.$on('$destroy', function() {
