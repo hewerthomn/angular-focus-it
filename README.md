@@ -25,7 +25,7 @@ Add the `focusIt` module in your app dependencies.
 
 ```javascript
 angular.module('app', [
-	
+
 	'focusIt'
 
 ])
@@ -38,6 +38,9 @@ To use in your controller, add `focus` in your controller dependencies.
 ```javascript
 .controller('HomeCtrl', ['$scope', 'focus', function($scope, focus) {
 	focus('name');
+
+	var timeout = 500; // milliseconds, 1000 ms = 1 second
+	focus('type', timeout); // param timeout is optional e has default value = 0
 }]);
 ```
 

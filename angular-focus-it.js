@@ -1,19 +1,14 @@
 angular.module('focusIt', [])
-	.factory('focus', ['$timeout', function($timeout)
-	{
-		return function(id) {
+	.factory('focus', ['$timeout', function($timeout){
+		return function(id, timeout) {
 			$timeout(function() {
 				var element = document.getElementById(id);
 				if(element) element.focus();
-			});
+			}, timeout || 0);
 		};
 	}])
 	.directive('focusOn', ['focus', function(focus) {
-		return function($scope, $elem, $attrs)
-		{
-			console.log('focus id', $attrs.focusId);
-			console.log('focus on', $attrs.focusOn);
-
+		return function($scope, $elem, $attrs) {
 			$elem.on($attrs.focusOn, function() {
 				focus($attrs.focusId);
 			});
@@ -22,4 +17,4 @@ angular.module('focusIt', [])
 				$elem.off($attrs.focusOn);
 			});
 		};
-	}]);	
+	}]);
